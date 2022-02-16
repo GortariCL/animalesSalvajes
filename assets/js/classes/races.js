@@ -1,5 +1,7 @@
 import Animal from "./animal.js"
 
+//1. Crear las clases representadas en el diagrama implementando la herencia indicada.
+
 class Leon extends Animal{
     constructor(nombre, edad, img, comentarios, sonido){
         super(nombre, edad, img, comentarios, sonido);

@@ -1,3 +1,4 @@
+//2. Crear las instancias de las clases utilizando los datos del formulario.
 class Animal{
     constructor(nombre, edad, img, comentarios, sonido){
         let Nombre = nombre;

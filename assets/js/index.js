@@ -1,3 +1,5 @@
+//5. Dividir el código en módulos
+
 import {Leon, Lobo, Oso, Serpiente, Aguila} from "./classes/races.js";
 
 let animales = [];
@@ -56,6 +58,10 @@ registroAnimal.addEventListener("click", () => {
         );
     }
 
+//7. Validar que el usuario haya asignado todos los datos del animal antes de que éste
+//sea agregado a la tabla.
+//8.Devolver el formulario en un estado inicial luego de registrar a cada animal.
+
     if(nombre.value && edad.value && imagenSrcBg && comentarios.value){
         animales.push(nuevoAnimal);
         nombre.selectedIndex = 0;
@@ -69,9 +75,12 @@ registroAnimal.addEventListener("click", () => {
     }
 });
 
+//6. Utilizar la manipulación del DOM para mostrar en la tabla los animales registrados
+//con el formulario.
 const reloadTable = () => {
     const animalesTemplate = document.getElementById("Animales");
     animalesTemplate.innerHTML = "";
+//10. Mostrar el detalle de cada animal en una ventana modal al ser presionada su imagen
     animales.forEach((an, i) => {
         animalesTemplate.innerHTML+= `
             <div class="px-2">
