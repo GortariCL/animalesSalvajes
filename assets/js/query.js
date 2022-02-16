@@ -1,4 +1,4 @@
-let animals = (() => {
+let animals = ( () => {
     const url = "http://localhost:5500/animales.json";
 
     const getData = async () => {
@@ -6,7 +6,7 @@ let animals = (() => {
         const data = await resolve.json();
         return data;
     }
-    return(getData);
+    return { getData };
 })();
 
 export default animals;

@@ -12,7 +12,7 @@ class Animal{
         this._getComentarios = () => Comentarios;
         this._getSonido = () => Sonido;
 
-        this.setComentarios = (nuevo_comentario) => Comentarios = nuevo_comentario;
+        this._setComentarios = (nuevo_comentario) => Comentarios = nuevo_comentario;
     }
 
     get getNombre(){
@@ -21,17 +21,17 @@ class Animal{
     get getEdad(){
         return this._getEdad();
     }
-    get getIMg(){
+    get getImg(){
         return this._getImg();
     }
     get getComentarios(){
         return this._getComentarios();
     }
-    set setComentarios(nuevo_comentario){
-        this._getComentarios(nuevo_comentario);
-    }
     get getSonido(){
         return this._getSonido();
+    }
+    set setComentarios(nuevo_comentario){
+        this._setComentarios(nuevo_comentario);
     }
 }
 
